@@ -17,7 +17,6 @@ object SorterApp  {
 
     val spark = SparkSession.builder()
       .appName("Spark records sorting app")
-      .master("local")
       .getOrCreate()
 
     val df = spark.read
